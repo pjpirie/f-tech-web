@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+html{
+	font-size: 1.4vw;
+}
+body{
+	font-family: proxima-nova,sans-serif;
+}
+header{
+	display: grid;
+	/*grid-template-columns: */
+	height: 15vh;
+	background: black;
+}
+#logo{
+	width: 30vw;
+}
+nav{
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+	border: 1px solid red;
+	padding: 0 30vw 0 0;
+}
+nav>div.nav-item{
+	display: inline-block;
+	position: relative;
+	margin: 0px 5px;
+}
+nav>div.nav-item:first-child{
+	border: 1px solid red;
+	position: relative;
+	right: 10%;
+	/*top: 50%;*/
+	/*transform: translate(-50%,-50%);*/
+}
