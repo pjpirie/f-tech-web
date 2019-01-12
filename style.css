@@ -10,31 +10,49 @@ html{
 body{
 	font-family: proxima-nova,sans-serif;
 }
-header{
+.wrapper{
+	width: 100vw;
+	height: 100vh;
 	display: grid;
-	/*grid-template-columns: */
-	height: 15vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+header{
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	background: black;
+	/*border: 1px solid blue;*/
 }
 #logo{
-	width: 30vw;
+	width: 100%;
+	grid-column: 1/2;
 }
 nav{
-	display: inline-block;
-	position: relative;
+	/*border: 1px solid red;*/
+	grid-column: 2/4;
 	color: #ffffff;
-	border: 1px solid red;
-	padding: 0 30vw 0 0;
 }
-nav>div.nav-item{
+nav>ul{
+	/*border: 1px solid yellow;*/
+	/*display: inline-block;*/
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+nav>ul>div.nav-item{
 	display: inline-block;
-	position: relative;
-	margin: 0px 5px;
+	padding: 5px 20px;
+	font-size: 1.6rem;
+	transition: all 250ms ease-in-out;
+	cursor: pointer;
 }
-nav>div.nav-item:first-child{
-	border: 1px solid red;
-	position: relative;
-	right: 10%;
-	/*top: 50%;*/
-	/*transform: translate(-50%,-50%);*/
+nav>ul>div.nav-item:hover{
+	display: inline-block;
+	padding: 5px 20px;
+	font-size: 1.7rem;
+	color: #dddddd;
 }
