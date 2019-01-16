@@ -9,6 +9,7 @@
 </body>
 </html>
 <?php
+//http://form.guide/email-form/php-form-to-email.html
 // setting up variables from form input values
 $name = $_POST['name'];
 $telephone = $_POST['telephone']

@@ -23,7 +23,7 @@ body{
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
 	overflow-x: hidden;
 }
 /**************************************/
@@ -37,8 +37,11 @@ header{
 	background: black;
 }
 #logo{
+	
 	width: 100%;
 	grid-column: 1/2;
+	padding: 10px;
+	
 }
 nav{
 	grid-column: 2/4;
@@ -67,6 +70,8 @@ nav>ul>div.nav-item:hover{
 	font-size: 1.7rem;
 	color: #dddddd;
 }
+
+
 /**************************************/
 /***              Main              ***/
 /**************************************/
@@ -80,6 +85,8 @@ main{
 	grid-template-rows: 1fr;
 }
 div.anim-frame{
+	margin-top:10px;
+	 
 	grid-column: 2/3;
 	grid-row: 1/2;
 	position: relative;
@@ -88,6 +95,7 @@ div.anim-frame{
 
 
 }
+
 #video-player{
 	position: relative;
 	width: 100%;
