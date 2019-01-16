@@ -37,8 +37,11 @@ header{
 	background: black;
 }
 #logo{
+	
 	width: 100%;
 	grid-column: 1/2;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 nav{
 	grid-column: 2/4;
