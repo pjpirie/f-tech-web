@@ -63,6 +63,7 @@ nav>ul>div.nav-item{
 }
 nav>ul>div.nav-item.active{
 	color: #ddd;
+	border-bottom: 1px solid #ddd;
 }
 nav>ul>div.nav-item:hover{
 	display: inline-block;
@@ -92,6 +93,8 @@ div.anim-frame{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 3px solid #ddd;
 
 
 }
