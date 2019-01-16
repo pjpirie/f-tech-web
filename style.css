@@ -178,8 +178,13 @@ aside>section{
 	 display: grid;
 }
 #zintec>div{
-	grid-column: 1/-1;
-	font-size: 0.95rem;
+	grid-column: 2/5;
+	font-size: 0.65rem;
+}
+#zintec>div>p{
+	grid-column: 2/4;
+	text-align: left;
+	font-size: 0.65rem;
 }
 #contact{
 	display: none;
