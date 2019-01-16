@@ -99,7 +99,8 @@ div.actions{
 	transform: translateY(-25%);
 
 }
-div.actions>button{
+div.actions>button,
+div.actions>select{
 	height: 50px;
 	width: 100px;
 	border-radius: 5px;
