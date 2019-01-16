@@ -81,8 +81,45 @@
 					 	<p>What do you get when you cross mild steel with zinc? A durable, versatile metal that fares brilliantly in storage and transit. This is Zintec steel sheet and it’s one of the most popular metals for use in car bodies, electronics, white goods and a whole lot more. It’s just the job if you don’t quite need the weather-proof properties of galvanised steel, but you do need a steel sheet metal that won’t rust easily. Thanks to a clever electromagnetic process, the steel is covered in a thin layer of zinc, which makes it extra strong. It’s also smooth, making it an excellent base for enamelling and powder-coating.</p>
 				 	</div>
 				</section>
+			<!-- https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776 -->
 				<section id="contact" class="active">
-					<!-- Craig Put The Contact Form Here -->
+					<form method="post" name="myemailform" action="form-to-email.php">
+					<div class="contact-wrapper">
+						
+						<div class="contact-left">
+							
+
+								
+								<label for="Name" class="name">Name :</label>
+								<input class="input-box slate rounded" id="Name" type="text" value="Bloggs" name="Name">
+								<br>
+								<label for="telephone" class="telephone">Telephone :</label>
+								<input class="input-box slate rounded" id="tel" type="tel"  Value="Telephone" name="telephone">
+								<br>
+								<label for="email" class="email">Email :</label>
+								<input class="input-box slate rounded " id="email" type="email" value="Your email address" name="email">
+								<br>		 
+						</div>
+
+						<div class="contact-right">
+							<div class="styled-select slate semi-square">
+								<select id="reason" form="contactReason" name = "reason">
+									<option value="general">Reason for enquiry</option>
+									<option value="general">General Enquiry</option>
+									<option value="Buying">I'm looking for a local stockist</option>
+									<option value="stockist">I wish to become a stockist</option>
+									<option value="technical">I have a technical question</option>
+								</select>
+							</div>							 
+							<br>
+							<textarea class="text-area slate rounded" name="message" form="usrform">Enter text here...</textarea>
+							<br>
+							<input class="submit-button slate semi-square" type="submit" value="Submit">
+						</div>	
+						
+					</div>	
+					</form>	
+					//http://form.guide/email-form/php-form-to-email.html
 				</section>
 		</aside>
 	</div>
