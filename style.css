@@ -63,6 +63,7 @@ nav>ul>div.nav-item{
 }
 nav>ul>div.nav-item.active{
 	color: #ddd;
+	border-bottom: 1px solid #ddd;
 }
 nav>ul>div.nav-item:hover{
 	display: inline-block;
@@ -92,6 +93,8 @@ div.anim-frame{
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
+	padding: 0px 0px 10px 0px;
+	border-bottom: 3px solid #ddd;
 
 
 }
@@ -183,6 +186,10 @@ aside>section{
 #benefits.active{
 	display: grid;
 }
+#benefits.active>div>h4{    
+	font-style: normal;
+    font-weight: 400;
+}
 #benefits>div:first-child{
 	grid-column: 2/3;
 }
@@ -196,8 +203,13 @@ aside>section{
 	 display: grid;
 }
 #zintec>div{
-	grid-column: 1/-1;
-	font-size: 0.95rem;
+	grid-column: 2/5;
+	font-size: 0.65rem;
+}
+#zintec>div>p{
+	grid-column: 2/4;
+	text-align: left;
+	font-size: 0.65rem;
 }
 #contact{
 	display: none;
