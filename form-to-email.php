@@ -10,8 +10,7 @@
 </html>
 <?php
 // setting up variables from form input values
-$firstname = $_POST['firstName'];
-$secondname = $_POST['secondName'];
+$name = $_POST['name'];
 $telephone = $_POST['telephone']
 $reason = $_POST['reason'];
 $visitor_email = $_POST['email'];
@@ -21,15 +20,15 @@ $message = wordwrap($message,70);// word wraps the message if greater than 70 ch
 // composing the email
 $email_from = 'form_enquiry@f-tech.tech';
 $email_subject = "New message from website";
-$email_body = "You have received a new message from the user $firstname $secondname.\n".
-		"Their type of enquiry is $reason.\n".
+$email_body = "You have received a new message from the user" . $name . "\n".
+		"Their type of enquiry is" . $reason. ",\n".
                             "Here is the message:\n $message".
-	  "They can be contacted by telephone at: $telephone or by email at $visitor_email."
+	  "They can be contacted by telephone at: " . $telephone . " or by email at ".$visitor_email.".";
 
 	  
  $to = "30305419@cityofglacol.ac.uk";
- $headers = "From: $email_from \r\n";
- $headers .= "Reply-To: $visitor_email \r\n";
+ $headers = "From: ".$email_from . "\r\n";
+ $headers .= "Reply-To: ".$visitor_email." \r\n";
 
 // checking if the email contains injections - spam characters if so returns messae to site
 function IsInjected($str)
