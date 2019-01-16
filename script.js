@@ -6,6 +6,8 @@ const section_benefits = document.querySelector('#benefits');
 const section_zintec = document.querySelector('#zintec');
 const section_contact = document.querySelector('#contact');
 const section_home = document.querySelector('#home');
+const pp = document.querySelector('#play-pause');
+const vid = document.querySelector('video');
 
 
 
@@ -51,9 +53,22 @@ function setNavActive(target){
 	removeClass(nav_contact, 'active');
 	addClass(target, 'active');
 }
-
+function playPause(ele){
+		if(ele.classList.contains("playing")){
+			removeClass(ele,'playing');
+			addClass(ele,'paused');
+			ele.innerHTML = 'Play'
+			vid.pause();
+		}else{
+			removeClass(ele,'paused');
+			addClass(ele,'playing');
+			ele.innerHTML = 'Pause'
+			vid.play();
+		}
+}
 
 nav_home.addEventListener('click', function(e) {setActive(section_home,nav_home);});
 nav_benefits.addEventListener('click', function(e) {setActive(section_benefits,nav_benefits);});
 nav_zintec.addEventListener('click', function(e) {setActive(section_zintec,nav_zintec);});
 nav_contact.addEventListener('click', function(e) {setActive(section_contact,nav_contact);});
+pp.addEventListener('click', function (e) {playPause(pp);})

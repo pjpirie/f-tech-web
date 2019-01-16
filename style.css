@@ -161,6 +161,10 @@ aside>section{
 #benefits.active{
 	display: grid;
 }
+#benefits.active>div>h4{    
+	font-style: normal;
+    font-weight: 400;
+}
 #benefits>div:first-child{
 	grid-column: 2/3;
 }
