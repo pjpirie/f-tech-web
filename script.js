@@ -1,11 +1,11 @@
 const nav_benefits = document.querySelector('#navbtn-benefits');
 const nav_zintec = document.querySelector('#navbtn-zintec');
 const nav_contact = document.querySelector('#navbtn-contact');
-const nav_home. = document.querySelector('#navbtn-home');
+const nav_home = document.querySelector('#navbtn-home');
 const section_benefits = document.querySelector('#benefits');
 const section_zintec = document.querySelector('#zintec');
 const section_contact = document.querySelector('#contact');
-const section_home. = document.querySelector('#home');
+const section_home = document.querySelector('#home');
 
 setActive(section_home);
 
