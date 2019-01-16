@@ -58,6 +58,9 @@ nav>ul>div.nav-item{
 	transition: all 250ms ease-in-out;
 	cursor: pointer;
 }
+nav>ul>div.nav-item.active{
+	color: #ddd;
+}
 nav>ul>div.nav-item:hover{
 	display: inline-block;
 	padding: 5px 20px;
@@ -122,6 +125,24 @@ aside>section{
 	height: 100%;
 	text-align: center;
 	/*border: 1px solid red;*/
+}
+#home{
+	display: none;
+}
+#home.active{
+	display: grid;
+}
+#home>#img_prem_front{
+	grid-column: 1/2;
+}
+#home>h2:first-child{
+	grid-column: 2/3;
+}
+#home>#img_stand_front{
+	grid-column: 3/4;
+}
+#home>h2:first-child{
+	grid-column: 4/5;
 }
 #benefits{
 	display: none;
