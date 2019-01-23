@@ -127,6 +127,7 @@ aside{
 	grid-row:5/-1;
 	grid-column: 1/-1;
 	background: #151820;
+	/*background-color: #ddd;*/
 	color: #ffffff;
 	padding: 1%;
 }
@@ -151,6 +152,32 @@ a{
 .render-images {
 	/*border:1px solid white;*/
 	width:100%;
+}
+.colorOptions{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.colorOptions>div{
+	min-height: 30px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #3a3a3a;
+}
+#color1{
+	background-color: #9b2321;	
+}
+#color2{
+	background-color: #792423;
+}
+#color3{
+	background-color: #7f868a;
+}
+#color4{
+	background-color: #3d3635;
+}
+#color5{
+	background-color: #000000;
 }
 #home>#img_prem_front{
 	grid-column: 1/2;
