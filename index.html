@@ -118,12 +118,22 @@
 							<br>
 							<textarea class="text-area slate rounded" name="message" form="usrform">Enter text here...</textarea>
 							<br>
-							<input class="submit-button slate semi-square" type="submit" value="Submit">
+							<!-- <input class="submit-button slate semi-square" type="submit" value="Submit"> -->
+							<input class="submit-button slate semi-square" value="Submit" onclick="setActive(section_contactResult)">
+
+
+							
 						</div>	
 						
 					</div>	
 					</form>	
 					
+				</section>
+				<section id="contactResult" class="active">
+					<div>
+						<div id="contactResult-btn"><span></span><span></span></div>
+						<p>	Successfully Sent Contact Form</p>
+					</div>
 				</section>
 		</aside>
 	</div>

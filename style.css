@@ -248,8 +248,43 @@ a{
 }
 #contact.active{
 	display:block;
-	
-	
+}
+#contactResult{
+	display: none;
+	background-color: rgba(100,255,100,0.5);
+}
+#contactResult.active{
+	display:block;
+}
+#contactResult.active p{
+	text-align: center;
+}
+#contactResult.active>div>div{
+	/*background-color: #ddd;*/
+	margin: 50px 0 0 0;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	display: inline-block;
+}
+
+#contactResult.active span{
+	background-color: #f1f1f1;
+	width: 40px;
+	height: 5px;
+	line-height: 5px;
+	/*margin: 2px;*/
+	position: absolute;
+	display: inline-block;
+}
+#contactResult.active>div>div:hover>span{
+	background-color: #1a1a1a;
+}
+#contactResult.active span:first-child{
+	transform: rotate(-45deg);
+}
+#contactResult.active span:last-child{
+	transform: rotate(45deg);
 }
 .contact-wrapper {
 	grid-column: 1/-1;
