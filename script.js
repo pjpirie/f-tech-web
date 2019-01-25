@@ -22,7 +22,7 @@ const vid = document.querySelector('video');
 // console.log(section_contact.classList);
 // console.log(section_home.classList);
 
-setActive(section_contactResult,nav_home);
+setActive(section_home,nav_home);
 // setActive(section_home,nav_home);
 
 function removeClass(target,classToRemove){

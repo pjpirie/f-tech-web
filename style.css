@@ -241,7 +241,7 @@ a{
 #zintec>div>p{
 	grid-column: 2/4;
 	text-align: left;
-	/*font-size: 0.65rem;*/
+	font-size: 0.85rem;
 }
 #contact{
 	display: none;
