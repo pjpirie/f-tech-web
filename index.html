@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="script.js" defer></script>
 	<script src="colorScript.js" defer></script>
+	<script src="videoScript.js" defer></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -24,11 +25,11 @@
 		<!-- Main -->
 		<main>
 			<div class="anim-frame">
-				<video class="playing" id="video-player" src="assets/F-Tech_Premium_Alpha.mp4" autoplay preload="auto" muted loop></video>
+				<video class="playing" id="video-player" src="assets/F-Tech_Standard_C.mp4" autoplay preload="auto" muted loop></video>
 			</div>
 			<div class="actions">
-				<select>
-				  <option value="standard">Standard</option>
+				<select onchange="changeVideo(this)">
+				  <option active value="standard">Standard</option>
 				  <option value="premium">Premium</option>
 				  <option value="advertisment">Advertisemnt</option>
 				</select><br>
