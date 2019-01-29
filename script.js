@@ -14,6 +14,9 @@ const section_zintec = document.querySelector('#zintec');
 const section_contact = document.querySelector('#contact');
 const section_contactResult = document.querySelector('#contactResult');
 const section_home = document.querySelector('#home');
+console.log('Website Made By Paul Pirie And Criag Crowther');
+console.log('Paul Pirie : http://paulpirie.com/');
+console.log('Criag Crowther : N/A A.T.M');
 
 setActive(section_home, nav_home);
 
