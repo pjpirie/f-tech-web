@@ -196,7 +196,10 @@ a{
 	grid-row: 1/2;
 }
 #prem-text {
-		padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1.3vw;
+	text-align: left;
 }
 #home>#img_stand{
 	
@@ -209,11 +212,17 @@ a{
 	margin-bottom:10px;
 }
 #standard-text {
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size:1.3vw;
+	text-align: left;
 	
 }
 #benefits{
 	display: none;
+	font-size:1.3vw;
+	list-style-type: none;
+	text-align: left;
 }
 #benefits.active{
 	display: grid;
@@ -223,10 +232,17 @@ a{
     font-weight: 400;
 }
 #benefits>div:first-child{
-	grid-column: 2/3;
+	grid-column: 1/7;
+	font-size: 15px;
+	padding:0px 20px;
 }
+#benefits-list {
+	margin-left:30%;
+}
+/*
 #benefits>div:last-child{
-	grid-column: 4/5;
+	grid-column: 4/7;
+*/
 }
 #zintec{
 	display: none;
